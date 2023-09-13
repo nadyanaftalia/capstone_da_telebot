@@ -144,7 +144,7 @@ def send_plot(message):
 
     if selected_campaign_id in unique_campaign:
         # TO DO: prepare data for visualization
-        df_campaign = df[df['campaign_id'] == '1210']
+        df_campaign = df[df['campaign_id'] == selected_campaign_id]
         df_plot = pd.pivot_table(
         data = df_campaign,
         index = 'age',
