@@ -95,8 +95,7 @@ def send_summary(message):
 
     if selected_campaign_id in unique_campaign:
         # TO DO: find the range date
-        selected_campaign_id = '1210'
-        df_campaign = df[df['campaign_id'] == '1210']
+        df_campaign = df[df['campaign_id'] == selected_campaign_id]
         
         start_date = df_campaign['reporting_date'].min().strftime(format = '%d %b %Y')
         end_date = df_campaign['reporting_date'].max().strftime(format = '%d %b %Y')
